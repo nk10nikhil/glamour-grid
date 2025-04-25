@@ -1,0 +1,146 @@
+"use client"
+
+import type React from "react"
+
+import { useState } from "react"
+import { Button } from "@/components/ui/button"
+import { Input } from "@/components/ui/input"
+import { Label } from "@/components/ui/label"
+import { Textarea } from "@/components/ui/textarea"
+import { Check } from "lucide-react"
+
+export default function ContactForm() {
+  const [name, setName] = useState("")
+  const [email, setEmail] = useState("")
+  const [phone, setPhone] = useState("")
+  const [message, setMessage] = useState("")
+  const [isSubmitting, setIsSubmitting] = useState(false)
+  const [isSuccess, setIsSuccess] = useState(false)
+
+  const handleSubmit = (e: React.FormEvent) => {
+    e.preventDefault()
+    setIsSubmitting(true)
+
+    // Simulate API call
+    setTimeout(() => {
+      setIsSubmitting(false)
+      setIsSuccess(true)
+
+      // Reset form after 3 seconds
+      setTimeout(() => {
+        setIsSuccess(false)
+        setName("")
+        setEmail("")
+        setPhone("")
+        setMessage("")
+      }, 3000)
+    }, 1500)
+  }
+
+  return (
+    <div className="salon-card p-8 shadow-salon transition-all duration-300 hover:shadow-lg">
+      <h2 className="heading-md mb-6 flex items-center">
+        <span className="w-8 h-0.5 bg-primary mr-2 animate-pulse"></span>
+        Send Us a Message
+      </h2>
+
+      {isSuccess ? (
+        <div className="text-center py-8 animate-scaleIn">
+          <div className="inline-flex items-center justify-center w-16 h-16 rounded-full bg-green-100 mb-4 animate-fadeIn">
+            <Check className="h-8 w-8 text-green-600" />
+          </div>
+          <h3 className="text-xl font-bold mb-2 animate-fadeInUp" style={{ animationDelay: "0.2s" }}>Message Sent!</h3>
+          <p className="text-gray-600 mb-4 animate-fadeInUp" style={{ animationDelay: "0.3s" }}>
+            Thank you for contacting us. We'll get back to you as soon as possible.
+          </p>
+          <Button
+            onClick={() => setIsSuccess(false)}
+            className="bg-primary text-primary-foreground hover:bg-primary/90 rounded-full shadow-md transition-all duration-300 hover:scale-105 animate-fadeInUp"
+            style={{ animationDelay: "0.4s" }}
+          >
+            Send Another Message
+          </Button>
+        </div>
+      ) : (
+        <form onSubmit={handleSubmit} className="space-y-4">
+          <div className="transition-all duration-300 hover:translate-x-1">
+            <Label htmlFor="name" className="transition-colors duration-300">Full Name</Label>
+            <Input
+              id="name"
+              value={name}
+              onChange={(e) => setName(e.target.value)}
+              placeholder="Enter your full name"
+              required
+              className="border-gray-300 focus:border-primary focus:ring-primary transition-all duration-300 focus:scale-[1.01]"
+            />
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+            <div className="transition-all duration-300 hover:translate-x-1">
+              <Label htmlFor="email">Email</Label>
+              <Input
+                id="email"
+                type="email"
+                value={email}
+                onChange={(e) => setEmail(e.target.value)}
+                placeholder="Enter your email address"
+                required
+                className="border-gray-300 focus:border-primary focus:ring-primary transition-all duration-300 focus:scale-[1.01]"
+              />
+            </div>
+            <div className="transition-all duration-300 hover:translate-x-1">
+              <Label htmlFor="phone">Phone Number</Label>
+              <Input
+                id="phone"
+                value={phone}
+                onChange={(e) => setPhone(e.target.value)}
+                placeholder="Enter your phone number"
+                required
+                className="border-gray-300 focus:border-primary focus:ring-primary transition-all duration-300 focus:scale-[1.01]"
+              />
+            </div>
+          </div>
+
+          <div className="transition-all duration-300 hover:translate-x-1">
+            <Label htmlFor="message">Message</Label>
+            <Textarea
+              id="message"
+              value={message}
+              onChange={(e) => setMessage(e.target.value)}
+              placeholder="Enter your message"
+              rows={5}
+              required
+              className="border-gray-300 focus:border-primary focus:ring-primary transition-all duration-300 focus:scale-[1.01]"
+            />
+          </div>
+
+          <Button
+            type="submit"
+            className="w-full bg-secondary text-secondary-foreground hover:bg-secondary/90 rounded-full shadow-md transition-all duration-500 hover:shadow-lg hover:scale-[1.02] active:scale-95"
+            disabled={isSubmitting}
+          >
+            {isSubmitting ? (
+              <div className="flex items-center justify-center">
+                <span className="animate-spin h-5 w-5 mr-2 border-2 border-white border-t-transparent rounded-full"></span>
+                Sending...
+              </div>
+            ) : (
+              <div className="flex items-center justify-center group">
+                Send Message
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  className="h-5 w-5 ml-2 transition-transform duration-300 group-hover:translate-x-1"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M14 5l7 7m0 0l-7 7m7-7H3" />
+                </svg>
+              </div>
+            )}
+          </Button>
+        </form>
+      )}
+    </div>
+  )
+}
