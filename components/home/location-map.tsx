@@ -73,27 +73,7 @@ export default function LocationMap() {
         zoom={11}
         style={{ height: "100%", width: "100%" }}
       >
-        <TileLayer
-          url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
-          attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
-        />
-        {locations.map((location, index) => (
-          <Marker
-            key={index}
-            position={location.position}
-            icon={leafletIcon}
-            eventHandlers={{
-              click: () => setActiveLocation(location),
-            }}
-          >
-            <Popup>
-              <div className="font-semibold">{location.name}</div>
-              <Button asChild size="sm" className="mt-2 bg-primary text-white">
-                <Link href="/booking">Book Now</Link>
-              </Button>
-            </Popup>
-          </Marker>
-        ))}
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14029.492579698921!2d77.50486704206543!3d28.468307112055225!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390cea1a83be5989%3A0x6a3690bfa642b5c3!2sGalgotias%20College!5e0!3m2!1sen!2sin!4v1746439364481!5m2!1sen!2sin" width="100%" height="100%"></iframe>
       </MapContainer>
     </div>
   )

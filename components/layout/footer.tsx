@@ -13,7 +13,7 @@ export default function Footer() {
                 <Scissors className="h-5 w-5 text-white" />
               </div>
               <span className="text-2xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-primary to-secondary animate-pulse">
-                Glow Salon
+                GlamourGrid
               </span>
             </div>
             <p className="text-gray-400 mb-6">
@@ -92,16 +92,16 @@ export default function Footer() {
               <li className="flex items-start group">
                 <MapPin className="h-6 w-6 text-primary shrink-0 mt-0.5 mr-3 transition-transform duration-300 group-hover:scale-110" />
                 <span className="text-gray-400 group-hover:text-gray-300 transition-colors duration-300">
-                  123 Beauty Lane, Mumbai, Maharashtra 400001, India
+                  GCET, Greater Noida, India
                 </span>
               </li>
               <li className="flex items-center group">
                 <Phone className="h-6 w-6 text-primary mr-3 transition-transform duration-300 group-hover:scale-110" />
-                <span className="text-gray-400 group-hover:text-gray-300 transition-colors duration-300">+91 98765 43210</span>
+                <span className="text-gray-400 group-hover:text-gray-300 transition-colors duration-300">+91 7777048666</span>
               </li>
               <li className="flex items-center group">
                 <Mail className="h-6 w-6 text-primary mr-3 transition-transform duration-300 group-hover:scale-110" />
-                <span className="text-gray-400 group-hover:text-gray-300 transition-colors duration-300">info@glowsalon.in</span>
+                <span className="text-gray-400 group-hover:text-gray-300 transition-colors duration-300">nk10nikhil@gmail.com</span>
               </li>
             </ul>
           </div>
@@ -154,7 +154,7 @@ export default function Footer() {
 
         {/* Copyright */}
         <div className="text-center text-gray-500 text-sm animate-fadeInUp" style={{ animationDelay: "0.6s" }}>
-          <p>&copy; {new Date().getFullYear()} Glow Salon. All rights reserved.</p>
+          <p>&copy; {new Date().getFullYear()} GlamourGrid. All rights reserved.</p>
           <p className="mt-2">
             <span className="inline-block">Made with <span className="text-red-500 animate-pulse">❤️</span> in India</span>
             <span className="mx-2">|</span>

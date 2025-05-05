@@ -36,7 +36,7 @@ export default function MembershipSection() {
           <div className="inline-flex items-center justify-center w-16 h-16 rounded-full bg-primary/20 mb-4">
             <Crown className="h-8 w-8 text-primary" />
           </div>
-          <h2 className="heading-lg mb-4">Glow Membership Program</h2>
+          <h2 className="heading-lg mb-4">GlamourGrid Membership Program</h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
             Join our exclusive membership program and enjoy premium benefits, special discounts, and VIP treatment.
           </p>

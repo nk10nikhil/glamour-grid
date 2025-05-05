@@ -17,7 +17,7 @@ export default function GiftCardSection() {
             <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
             <div className="absolute bottom-8 left-8 right-8 text-white">
               <div className="bg-white/20 backdrop-blur-md rounded-lg p-6 border border-white/30">
-                <h3 className="text-2xl font-bold mb-2">Glow Salon Gift Card</h3>
+                <h3 className="text-2xl font-bold mb-2">GlamourGrid Gift Card</h3>
                 <p className="text-white/90">The perfect gift for any occasion</p>
               </div>
             </div>
@@ -26,7 +26,7 @@ export default function GiftCardSection() {
           <div>
             <h2 className="heading-lg mb-6">Give the Gift of Beauty</h2>
             <p className="text-gray-600 mb-4">
-              Looking for the perfect gift? A Glow Salon gift card is ideal for birthdays, anniversaries, or just to
+              Looking for the perfect gift? A GlamourGrid gift card is ideal for birthdays, anniversaries, or just to
               show someone you care.
             </p>
             <p className="text-gray-600 mb-6">

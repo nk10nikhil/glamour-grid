@@ -30,7 +30,7 @@ export default function WhyChooseUsSection() {
     <section className="section-padding bg-white">
       <div className="container-custom">
         <div className="text-center mb-16">
-          <h2 className="heading-lg mb-4">Why Choose Glow Salon?</h2>
+          <h2 className="heading-lg mb-4">Why Choose GlamourGrid?</h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
             Experience the difference with our commitment to excellence, luxury, and personalized care.
           </p>

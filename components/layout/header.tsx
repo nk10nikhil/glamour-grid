@@ -42,14 +42,14 @@ export default function Header() {
             <div className="w-10 h-10 rounded-full overflow-hidden hover:shadow-lg transition-shadow duration-300">
               <Image
                 src="https://images.unsplash.com/photo-1560066984-138dadb4c035?w=100&h=100&fit=crop&crop=faces&auto=format&q=60"
-                alt="Glow Salon Logo"
+                alt="GlamourGrid"
                 width={40}
                 height={40}
                 className="rounded-full object-cover transform transition-transform duration-700 hover:scale-110"
               />
             </div>
             <span className={`text-2xl font-bold bg-clip-text text-purple-600 bg-gradient-to-r from-primary to-secondary transition-all duration-500 ${isScrolled ? 'opacity-100' : 'opacity-90 hover:opacity-100'}`}>
-              Glow Salon
+              GlamourGrid
             </span>
           </Link>
 

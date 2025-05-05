@@ -14,12 +14,12 @@ const poppins = Poppins({
 })
 
 export const metadata: Metadata = {
-  title: "Glow Unisex Salon - Beauty for All",
+  title: "GlamourGrid - Beauty for All",
   description:
     "Premier unisex salon in India offering haircuts, styling, nail care, beauty treatments, and makeup services for men and women.",
   keywords: "unisex salon, beauty salon India, haircuts, hairstyling, nail care, beauty treatments, makeup services",
   openGraph: {
-    title: "Glow Unisex Salon - Beauty for All",
+    title: "GlamourGrid - Beauty for All",
     description:
       "Premier unisex salon in India offering haircuts, styling, nail care, beauty treatments, and makeup services for men and women.",
     images: ["/images/og-image.jpg"],

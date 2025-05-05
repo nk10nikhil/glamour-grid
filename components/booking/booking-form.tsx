@@ -124,7 +124,7 @@ export default function BookingForm() {
       <CardHeader className="bg-gradient-to-r from-primary to-primary/80 text-white rounded-t-lg">
         <CardTitle>Book Your Appointment</CardTitle>
         <CardDescription className="text-white/90">
-          Fill out the form below to schedule your visit to Glow Unisex Salon.
+          Fill out the form below to schedule your visit to GlamourGrid.
         </CardDescription>
       </CardHeader>
       <CardContent className="p-8">

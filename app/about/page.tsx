@@ -4,8 +4,8 @@ import { Button } from "@/components/ui/button"
 import Link from "next/link"
 
 export const metadata: Metadata = {
-  title: "About Us - Glow Unisex Salon",
-  description: "Learn about Glow Unisex Salon's history, mission, and our team of expert stylists.",
+  title: "About Us - GlamourGrid",
+  description: "Learn about GlamourGrid history, mission, and our team of expert stylists.",
 }
 
 export default function AboutPage() {
@@ -13,7 +13,7 @@ export default function AboutPage() {
     <>
       <div className="bg-gradient-to-r from-primary to-primary-light py-20 mb-12">
         <div className="container-custom">
-          <h1 className="heading-xl text-white text-center mb-4">About Glow Salon</h1>
+          <h1 className="heading-xl text-white text-center mb-4">About GlamourGrid</h1>
           <p className="text-xl text-white/90 text-center max-w-2xl mx-auto">
             Discover our story, our passion for beauty, and our commitment to excellence.
           </p>
@@ -24,7 +24,7 @@ export default function AboutPage() {
           <div>
             <h2 className="heading-lg mb-6">Our Story</h2>
             <p className="text-gray-600 mb-4">
-              Founded in 2010, Glow Salon has been at the forefront of beauty and style in Mumbai. Our journey began
+              Founded in 2020, GlamourGrid has been at the forefront of beauty and style in India. Our journey began
               with a simple vision: to provide top-quality beauty services in a welcoming, luxurious environment.
             </p>
             <p className="text-gray-600 mb-4">
@@ -38,7 +38,7 @@ export default function AboutPage() {
           <div className="relative h-[400px] rounded-lg overflow-hidden">
             <Image
               src="https://images.unsplash.com/photo-1560066984-138dadb4c035?w=800&h=600&fit=crop&crop=focalpoint&auto=format&q=80"
-              alt="Glow Salon Interior"
+              alt="GlamourGrid Interior"
               fill
               className="object-cover"
             />
@@ -48,7 +48,7 @@ export default function AboutPage() {
         <div className="text-center mb-20">
           <h2 className="heading-lg mb-6">Our Mission</h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-            At Glow Salon, our mission is to enhance the natural beauty of every client, boost their confidence, and
+            At GlamourGrid, our mission is to enhance the natural beauty of every client, boost their confidence, and
             provide a relaxing and rejuvenating experience that leaves them feeling refreshed and radiant.
           </p>
         </div>
@@ -78,7 +78,7 @@ export default function AboutPage() {
         <div className="text-center">
           <h2 className="heading-lg mb-6">Experience the Glow Difference</h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto mb-8">
-            We invite you to visit Glow Salon and experience our commitment to beauty, style, and exceptional service
+            We invite you to visit GlamourGrid and experience our commitment to beauty, style, and exceptional service
             firsthand.
           </p>
           <Button asChild size="lg">

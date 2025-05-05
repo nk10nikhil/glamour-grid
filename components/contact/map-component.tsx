@@ -21,9 +21,9 @@ export default function MapComponent() {
             <Marker position={[19.076, 72.8777]} icon={customIcon}>
                 <Popup className="custom-popup">
                     <div className="text-center">
-                        <h3 className="font-bold">Glow Unisex Salon</h3>
-                        <p className="text-sm">123 Beauty Lane, Mumbai</p>
-                        <p className="text-xs text-gray-600 mt-1">Call: +91 98765 43210</p>
+                        <h3 className="font-bold">GlamourGrid</h3>
+                        <p className="text-sm">GCET, Greater Noida, UP, India</p>
+                        <p className="text-xs text-gray-600 mt-1">Call: +91 7777048666</p>
                     </div>
                 </Popup>
             </Marker>

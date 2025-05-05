@@ -14,7 +14,7 @@ export default function ContactInfo() {
           <div>
             <h3 className="font-semibold mb-1 group-hover:text-primary transition-colors duration-300">Address</h3>
             <p className="text-gray-600 group-hover:text-gray-800 transition-colors duration-300">
-              123 Beauty Lane, Mumbai, Maharashtra 400001, India
+              GCET, Greater Noida, Uttar Pradesh, India
             </p>
           </div>
         </div>
@@ -23,7 +23,7 @@ export default function ContactInfo() {
           <Phone className="h-6 w-6 text-primary shrink-0 mt-0.5 mr-3 transition-transform duration-300 group-hover:scale-125 group-hover:rotate-12" />
           <div>
             <h3 className="font-semibold mb-1 group-hover:text-primary transition-colors duration-300">Phone</h3>
-            <p className="text-gray-600 group-hover:text-gray-800 transition-colors duration-300">+91 98765 43210</p>
+            <p className="text-gray-600 group-hover:text-gray-800 transition-colors duration-300">+91 7777048666</p>
           </div>
         </div>
 
@@ -31,7 +31,7 @@ export default function ContactInfo() {
           <Mail className="h-6 w-6 text-primary shrink-0 mt-0.5 mr-3 transition-transform duration-300 group-hover:scale-125 group-hover:rotate-12" />
           <div>
             <h3 className="font-semibold mb-1 group-hover:text-primary transition-colors duration-300">Email</h3>
-            <p className="text-gray-600 group-hover:text-gray-800 transition-colors duration-300">info@glowsalon.in</p>
+            <p className="text-gray-600 group-hover:text-gray-800 transition-colors duration-300">nk10nikhil@gmail.com</p>
           </div>
         </div>
 

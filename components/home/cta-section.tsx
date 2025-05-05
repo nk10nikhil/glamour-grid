@@ -9,7 +9,7 @@ export default function CTASection() {
         <div className="text-center mb-12">
           <h2 className="heading-lg mb-6">Our Locations</h2>
           <p className="text-gray-600 max-w-2xl mx-auto mb-8 text-lg">
-            Visit us at one of our convenient locations across Mumbai. Each salon offers our full range of premium
+            Visit us at one of our convenient locations across India. Each salon offers our full range of premium
             services.
           </p>
         </div>

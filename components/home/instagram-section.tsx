@@ -39,7 +39,7 @@ export default function InstagramSection() {
 
         <div className="text-center">
           <Button asChild size="lg">
-            <a href="https://www.instagram.com/glowsalon" target="_blank" rel="noopener noreferrer">
+            <a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer">
               Follow Us on Instagram
             </a>
           </Button>

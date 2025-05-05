@@ -214,7 +214,7 @@ export default function TestimonialsSection() {
 
       <div className="container-custom relative z-10">
         <div className="salon-section-title animate-fadeInDown mb-8">
-          <h2 className="heading-lg">What Our Customers Say</h2>
+          <h2 className="heading-lg pb-5 flex justify-center">What Our Customers Say</h2>
           <p className="text-gray-600 max-w-2xl mx-auto">
             Don't just take our word for it. Here's what our clients have to say about their experiences at Glow Unisex
             Salon.

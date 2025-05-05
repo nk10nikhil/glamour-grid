@@ -14,7 +14,7 @@ import InstagramSection from "@/components/home/instagram-section"
 import CTASection from "@/components/home/cta-section"
 
 export const metadata: Metadata = {
-  title: "Glow Unisex Salon - Beauty for All",
+  title: "GlamourGrid - Beauty for All",
   description:
     "Premier unisex salon in India offering haircuts, styling, nail care, beauty treatments, and makeup services for men and women.",
 }
