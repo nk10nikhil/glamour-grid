@@ -1,7 +1,7 @@
 import Image from "next/image"
 import Link from "next/link"
 import { Button } from "@/components/ui/button"
-import { Clock, IndianRupee } from "lucide-react"
+import { Clock, IndianRupee, Calendar } from "lucide-react"
 
 interface ServiceProps {
   service: {
@@ -18,48 +18,52 @@ interface ServiceProps {
 export default function ServiceCard({ service, index = 0 }: ServiceProps) {
   return (
     <div
-      className="salon-card overflow-hidden shadow-salon hover:shadow-salon-hover transition-all duration-500 group hover:translate-y-[-5px] animate-fadeInUp"
+      className="overflow-hidden rounded-2xl bg-white shadow-lg hover:shadow-xl transition-all duration-500 group hover:translate-y-[-8px] animate-fadeInUp"
       style={{ animationDelay: `${0.1 * (index + 1)}s` }}
     >
-      <div className="relative h-32 sm:h-48 overflow-hidden">
+      <div className="relative h-56 sm:h-64 overflow-hidden">
         <Image
           src={service.image || "/placeholder.svg"}
           alt={service.name}
           fill
           className="object-cover transition-transform duration-700 group-hover:scale-110"
         />
-        <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-80 group-hover:opacity-100 transition-opacity duration-300"></div>
-        <div className="absolute top-2 right-2 sm:top-3 sm:right-3 bg-primary/90 text-white text-[10px] sm:text-xs py-1 px-2 rounded-full shadow-md transform rotate-3 animate-pulse">
+        <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent opacity-80 group-hover:opacity-90 transition-opacity duration-300"></div>
+        <div className="absolute top-3 right-3 bg-gradient-to-r from-purple-600 to-pink-500 text-white text-xs py-1 px-3 rounded-full shadow-md transform rotate-2 font-medium">
           Popular
+        </div>
+
+        <div className="absolute left-0 bottom-0 w-full p-4">
+          <h3 className="text-lg sm:text-2xl font-bold text-white mb-1 group-hover:text-white transition-colors duration-300 drop-shadow-md">{service.name}</h3>
         </div>
       </div>
 
-      <div className="p-3 sm:p-6 relative">
-        <h3 className="text-sm sm:text-xl font-bold mb-1 sm:mb-2 group-hover:text-primary transition-colors duration-300 line-clamp-1">{service.name}</h3>
-        <p className="text-gray-600 text-xs sm:text-base mb-2 sm:mb-4 line-clamp-2 sm:line-clamp-3">{service.description}</p>
+      <div className="p-5 sm:p-6 relative">
+        <p className="text-gray-600 text-sm sm:text-base mb-5 line-clamp-3">{service.description}</p>
 
-        <div className="flex justify-between items-center mb-2 sm:mb-4">
-          <div className="flex items-center text-primary font-semibold text-xs sm:text-base group-hover:scale-110 transition-transform duration-300">
-            <IndianRupee className="h-3 w-3 sm:h-4 sm:w-4 mr-0.5 sm:mr-1" />
+        <div className="flex justify-between items-center mb-5">
+          <div className="flex items-center bg-gradient-to-r from-purple-600 to-pink-500 text-white font-semibold text-sm sm:text-base px-3 py-1 rounded-full group-hover:shadow-md transition-all duration-300">
+            <IndianRupee className="h-3.5 w-3.5 sm:h-4 sm:w-4 mr-1" />
             <span>{service.price}</span>
           </div>
 
-          <div className="flex items-center text-gray-500 text-xs sm:text-sm group-hover:scale-110 transition-transform duration-300">
-            <Clock className="h-3 w-3 sm:h-4 sm:w-4 mr-0.5 sm:mr-1 group-hover:animate-spin-slow" />
+          <div className="flex items-center text-gray-600 text-xs sm:text-sm border border-gray-200 px-3 py-1 rounded-full group-hover:border-purple-200 transition-all duration-300">
+            <Clock className="h-3.5 w-3.5 sm:h-4 sm:w-4 mr-1 group-hover:text-purple-500" />
             <span>{service.duration}</span>
           </div>
         </div>
 
         <Button
           asChild
-          size="sm"
-          className="w-full bg-secondary text-secondary-foreground hover:bg-secondary/90 hover:shadow-lg rounded-full shadow-md transition-all duration-500 hover:scale-105 text-xs sm:text-base py-1 sm:py-2"
+          size="default"
+          className="w-full bg-gradient-to-r from-purple-600 to-pink-500 hover:from-pink-500 hover:to-purple-600 text-white hover:shadow-lg hover:shadow-pink-500/20 rounded-full py-2.5 transition-all duration-300 font-medium"
         >
           <Link href={`/booking?service=${encodeURIComponent(service.name)}`} className="flex items-center justify-center group">
-            Book Now
+            <Calendar className="h-4 w-4 mr-2" />
+            <span>Book Appointment</span>
             <svg
               xmlns="http://www.w3.org/2000/svg"
-              className="h-3 w-3 sm:h-4 sm:w-4 ml-1 sm:ml-2 transition-transform duration-300 group-hover:translate-x-1"
+              className="h-4 w-4 ml-1.5 transition-transform duration-300 group-hover:translate-x-1"
               fill="none"
               viewBox="0 0 24 24"
               stroke="currentColor"
